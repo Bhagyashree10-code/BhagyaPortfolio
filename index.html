@@ -5,71 +5,286 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .inline-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            background: #000000e3;
+            padding: 20px;
+            padding: 50px 100px;
+            gap: 0px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .inline-section>div {
+            width: 50%;
+        }
+
+        .personal-info {
+            font-style: normal;
+            font-size: 15px;
+            color: #ffffff;
+            line-height: 1;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #333333;
+            border-radius: 8px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form h1 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .form div {
+            margin-bottom: 15px;
+        }
+
+        .form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+
+        .form input,
+        .form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #333333;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .form input:focus,
+        .form textarea:focus {
+            border-color: #007BFF;
+            box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 50px;
+        }
+
+        nav {
+            display: flex;
+            list-style-type: none;
+            padding-right: 35px;
+            padding: 0px;
+            column-gap: 40px;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        li.button-enquiry {
+            border: 1px solid #000;
+            background: #000;
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        li a{
+            color: #000;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
-    <div style="text-align: center;">
-        <h1><b>Portfolio</b></h1>
-        <hr>
-    </div>
-    <div style="display: flex; margin: 10px 100px;">
-        <div style="width: 50%; margin: 10px 100px;">
-            <!-- <marquee behavior="alternate" direction="right"> -->
-            <img style="width: 100%; height: 90%;" src="img.png" alt="profile pic"><br>
-            <!-- </marquee> -->
-        </div>
+    <header>
+        <logo>
+            <h2><b>Portfolio</b></h2>
+        </logo>
+        <nav>
+            <li>Home</li>
+            <li><a href="#about">About Us </a></li>
+            <li>Projects</li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="button-enquiry">Enquiry</li>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <div style="display: flex; margin: 10px 100px;">
+            <div style="width: 50%; margin: 10px 100px;">
+                <!-- <marquee behavior="alternate" direction="right"> -->
+                <img style="width: 100%; height: 90%;" src="img.png" alt="profile pic"><br>
+                <!-- </marquee> -->
+            </div>
 
-        <div style="width: 100%; align-content: center;">
-            <!-- <h3 style="text-align: center;">About:</h3> -->
-            <p>
+            <div id="about" style="width: 100%; align-content: center;">
+                <!-- <h3 style="text-align: center;">About:</h3> -->
+                <p>
                 <h1><b><u>Bhagyashree Ghodgekar</u></b></h1>
-        My Name is Bhagyashree. 
-        I have completed gradution 
-        in Bscit from DAV college</p >
-        
-            <h4>Skills:</h4>
-            <span><i>Basic knowledge about <strong>Html</strong> and <strong>Css</strong></i></span><br>
-        </div>
+                My Name is Bhagyashree.
+                I have completed gradution
+                in Bscit from DAV college</p>
+
+                <h4>Skills: <span style="font-weight: 200;"> Basic knowledge about</span></h4>
+                <strong>
+                    <li>Html</li>
+                </strong><strong>
+                    <li>Css</li>
+                </strong></span><br>
+                <div style="vertical-align: center;">
+                    <img style="width: 35px;"
+                        src="https://logosmarken.com/wp-content/uploads/2020/04/Linkedin-Emblem.png"><a
+                        style="color: #000; text-decoration: none;"
+                        href="https://www.linkedin.com/in/bhagyashree-ghodgekar-34554433a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linekdin</a>
+                    <img style="width:35px;"
+                        src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png"><a
+                        style="color: #000; text-decoration: none;" href="https://github.com/Bhagyashree10-code/">Github</a>
+                </div>
+            </div>
 
 
-        <!-- <marquee behavior="alternate" direction="right">
+            <!-- <marquee behavior="alternate" direction="right">
             <img src="https://tse3.mm.bing.net/th?id=OIP.nv9g-1pv95SNmT7Lsj26HwHaE7&pid=Api&P=0&h=180" alt="flower">
         </marquee> -->
-    </div><br>
-    <hr>
-    <h2 style="text-align: center;">Video</h2>
-    <div>
-        <iframe width="440" height="315" src="https://www.youtube.com/embed/jNN08DbgAGQ?si=mZRQWZdlL6fKTc8x"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="440" height="315" src="https://www.youtube.com/embed/BAx2GaMW2qA?si=w_im95zCxk6mOnlv"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="440" height="315" src="https://www.youtube.com/embed/k7ELO356Npo?si=vYQ3Qba9UGHNsg-k"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
-    </div>
-    <div>
+        </div><br>
         <hr>
-        <div style="text-align: center;">
-            <h2>Address:</h2>
-            <p>Siddhivinayak chawl no 4/14 Eshwarnagar Digha Navi Mumbai</p>
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.5122776980542!2d72.996660437825!3d19.186620429484428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bfe58d05054d%3A0xe275722b5c436633!2sU2%20cake%20shop%20ishwarnagar!5e0!3m2!1sen!2sin!4v1732870891941!5m2!1sen!2sin"
-                width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2 style="text-align: center;">Video</h2>
+        <div style="column-gap: 15px; display: flex; margin-left: 20px;">
+            <iframe width="440" height="315" src="https://www.youtube.com/embed/jNN08DbgAGQ?si=mZRQWZdlL6fKTc8x"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="440" height="315" src="https://www.youtube.com/embed/BAx2GaMW2qA?si=w_im95zCxk6mOnlv"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="440" height="315" src="https://www.youtube.com/embed/k7ELO356Npo?si=vYQ3Qba9UGHNsg-k"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
         </div>
-    </div>
-    <hr>
-    <div style="text-align: center;">
-        <a style="color: #000;"
-            href="https://www.linkedin.com/in/bhagyashree-ghodgekar-34554433a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linekdin</a>
-        <a style="color: #000;" href="https://github.com/Bhagyashree10-code/">Github</a>
-    </div>
+        <hr>
+        <section id="contact">
+            <div class="inline-section">
+                <aside>
+                    <div class="personal-info">
+                        <h2>Address:</h2>
+                        <p>Siddhivinayak chawl no 4/14 Eshwarnagar Digha Navi Mumbai</p>
+                    </div>
+                    <div class="personal-info">
+                        <h2>Email:</h2>
+                        <span>bhagyashreeghodgekar10@gmail.com</span>
+                    </div>
+                    <div class="personal-info">
+                        <h2>Phone:</h2>
+                        <span>8355940136</span>
+                    </div>
+                </aside>
+
+                <div>
+                    <form class="form">
+                        <h1>Contact Us</h1>
+                        <div>
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" name="fullname" id="fullname" required><br>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <!-- <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </div> -->
+                        <div>
+                            <label for="phone">Phone:</label>
+                            <input type="tel" name="phone" id="phone" required>
+                        </div>
+                        <!-- <div>
+            <label for="stream">Stream:</label>
+            <input type="radio" name="radio" value="Bsc-it">
+            <label for="bscit">Bsc-it</label>
+            <input type="radio" name="radio" value="Bsc-cs">
+            <label for="bsc-cs">Bsc-cs</label>
+        </div> -->
+                        <!-- <div>
+            <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" name="hobbie1" value="cricket">
+            <label for="cricket">Cricket</label>
+            <input type="checkbox" name="hobbie2" value="basketball">
+            <label for="basketball">Basketball</slabel>
+            <input type="checkbox" name="hobbie3" value="reading">
+            <label for="reading">Reading</label>
+        </div>
+        <div>
+            <label for="file">File Upload:</label>
+            <input type="file" name="file" accept=".pdf, .doc" multiple>
+        </div> -->
+                        <div>
+                            <label for="message">Message:</label>
+                            <textarea rows="3" cols="50"></textarea>
+                        </div>
+                        <button name="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div>
+            <hr>
+            <div style="text-align: center;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.5122776980542!2d72.996660437825!3d19.186620429484428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bfe58d05054d%3A0xe275722b5c436633!2sU2%20cake%20shop%20ishwarnagar!5e0!3m2!1sen!2sin!4v1732870891941!5m2!1sen!2sin"
+                    width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <hr>
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 
 </html>
